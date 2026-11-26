@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Sale Price Calculator — MONEYWISE</title>
+<meta name="description" content="Find the sale price and the exact amount you save. Free, private, no sign-up." />
+<meta name="theme-color" content="#0B1B33" />
+<meta name="robots" content="index,follow,max-image-preview:large" />
+<meta name="twitter:card" content="summary" />
+<link rel="canonical" id="canonicalLink" href="" />
+<link rel="stylesheet" href="../../assets/style.css" />
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"MONEYWISE","description":"Free financial calculators and plain-language money guides."}</script>
+<meta property="og:title" content="Sale Price Calculator — MONEYWISE" />
+<meta property="og:description" content="Free calculators, smart financial tools, and practical guides to help you save more, spend smarter, and plan your future." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="MONEYWISE" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230B1B33'/><path d='M26 68V32l12 16 12-16v36' stroke='%2310B981' stroke-width='9' fill='none' stroke-linejoin='round' stroke-linecap='round'/><circle cx='72' cy='36' r='7' fill='%232563EB'/></svg>">
+
+
+
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="#/" class="logo" aria-label="MONEYWISE home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 100 100" fill="none"><path d="M22 72V28l16 20 16-20v44" stroke="#10B981" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="32" r="8" fill="#2563EB"/></svg>
+      </span>
+      MONEYWISE
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#/tools">Tools</a>
+      <a href="#/articles">Guides</a>
+      <a href="#/about">About</a>
+    </nav>
+    <div class="header-right">
+      <label class="sr-only" for="currencyPicker">Display currency</label>
+      <select class="cur-select" id="currencyPicker" aria-label="Display currency"></select>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-nav container" id="mobileNav">
+    <a href="#/tools">Tools</a>
+    <a href="#/articles">Guides</a>
+    <a href="#/about">About</a>
+    <a href="#/contact">Contact</a>
+    <a href="#/legal/disclaimer">Disclaimer</a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+<div class="container page">
+<div class="breadcrumbs">
+<a href="../../">Home</a><span class="sep">/</span>
+<a href="../../tools/">Tools</a><span class="sep">/</span>
+<a href="../../tools/?cat=shopping">Shopping &amp; Deals</a><span class="sep">/</span>
+<span>Sale Price Calculator</span>
+</div>
+
+<div class="tool-head">
+<span class="pill">Shopping &amp; Deals</span>
+<h1>Sale Price Calculator</h1>
+<p>Find the sale price and the exact amount you save.</p>
+</div>
+
+<div class="calc-grid">
+<div class="panel">
+<div class="panel-head"><h2>Your details</h2>
+<button class="btn btn-sm btn-ghost" id="resetBtn"><svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"></path><path d="M3 3v5h5"></path></svg> Reset</button>
+</div>
+<div class="panel-body" id="calcForm">
+<div class="field"><label for="f_price">Original price</label><div class="input-wrap">
+<span class="input-prefix">$</span>
+<input type="number" id="f_price" data-key="price" value="180" min="0" step="0.01" class="has-prefix " inputmode="decimal">
+
+</div></div><div class="field"><label for="f_pct">Discount percentage</label><div class="input-wrap">
+
+<input type="number" id="f_pct" data-key="pct" value="35" min="0" max="100" step="0.1" class=" has-suffix" inputmode="decimal">
+<span class="input-suffix">%</span>
+</div></div>
+<div class="form-actions">
+<button class="btn btn-primary btn-block" id="printBtn"><svg class="" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg> Print result</button>
+</div>
+</div>
+</div>
+
+<div class="sticky-side">
+<div class="panel">
+<div class="panel-head"><h2>Results</h2></div>
+<div class="panel-body" id="calcOut"><div class="kpis">
+<div class="kpi primary">
+<div class="kpi-label">Sale price</div>
+<div class="kpi-val">$117.00</div>
+
+</div>
+<div class="kpi good">
+<div class="kpi-label">You save</div>
+<div class="kpi-val">$63.00</div>
+
+</div>
+<div class="kpi ">
+<div class="kpi-label">Discount</div>
+<div class="kpi-val">35.0%</div>
+
+</div>
+<div class="kpi ">
+<div class="kpi-label">Original price</div>
+<div class="kpi-val">$180.00</div>
+
+</div></div><div class="notes"><div class="note"><svg class="" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4M12 8h.01"></path></svg><span>A discount only represents real savings if you would have bought the item at full price anyway.</span></div></div></div>
+</div>
+<div class="disclaimer">
+<svg class="" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"></path><path d="M12 9v4M12 17h.01"></path></svg>
+<span><strong>Estimate only.</strong> MONEYWISE provides educational tools and estimates for informational purposes only. Calculations may not account for all fees, taxes, regulations or personal circumstances. This is not individualized financial, investment, tax or legal advice. Verify important decisions with a qualified professional.</span>
+</div>
+</div>
+</div>
+
+<div class="divider"></div>
+
+<div class="prose">
+<h2>How this calculator works</h2>
+<p>A quick way to check whether a promotion is genuinely worth it, and to know exactly what you will pay at the register.</p>
+<h3>The formula</h3>
+<div class="formula"><code><code>Savings = Price × (Discount ÷ 100)<br>Sale price = Price − Savings</code></code></div>
+<h3>Worked example</h3>
+<p>35% off $180 saves $63, giving a sale price of $117.</p>
+</div>
+
+<div class="panel" style="margin-top:28px">
+<div class="panel-head"><h2>Frequently asked questions</h2></div>
+<div class="panel-body">
+
+<div class="faq-item" data-faq="0">
+<button class="faq-q" aria-expanded="false" aria-controls="faq-a-0">
+<span>Is a 35% discount always a good deal?</span><svg class="" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+</button>
+<div class="faq-a" id="faq-a-0"><div class="faq-a-inner">Not necessarily — compare against other retailers. Some sale prices are set against inflated "original" prices.</div></div>
+</div>
+</div>
+</div>
+
+<div style="margin-top:44px">
+<h2 style="font-size:1.15rem;margin-bottom:16px">Related tools</h2>
+<div class="grid grid-3"><a class="card tool-card" href="../../tools/discount-calculator/">
+<span class="tool-ico "><svg class="" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-8.2-8.2V3h9.4l8.8 8.6a2 2 0 0 1 0 1.8Z"></path><circle cx="7.5" cy="7.5" r="1.2"></circle></svg></span>
+<h3>Discount Calculator</h3>
+<p>Work out sale prices and savings, including stacked discounts.</p>
+<span class="more">Open calculator <svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+</a><a class="card tool-card" href="../../tools/unit-price-calculator/">
+<span class="tool-ico "><svg class="" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-8.2-8.2V3h9.4l8.8 8.6a2 2 0 0 1 0 1.8Z"></path><circle cx="7.5" cy="7.5" r="1.2"></circle></svg></span>
+<h3>Unit Price Calculator</h3>
+<p>Compare two products and find which is genuinely cheaper per unit.</p>
+<span class="more">Open calculator <svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+</a><a class="card tool-card" href="../../tools/subscription-cost-calculator/">
+<span class="tool-ico "><svg class="" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><path d="M2 10h20"></path></svg></span>
+<h3>Subscription Cost Calculator</h3>
+<p>Add up what your subscriptions really cost over time.</p>
+<span class="more">Open calculator <svg class="" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg></span>
+</a></div>
+</div>
+
+<div style="margin-top:44px">
+<h2 style="font-size:1.15rem;margin-bottom:16px">Related guides</h2>
+<div class="grid grid-2"><a class="card article-card" href="../../articles/how-to-build-a-budget-that-actually-works/">
+<div class="article-thumb "><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg></div>
+<div class="article-body">
+<span class="article-cat">Budgeting</span>
+<h3>How to Build a Budget That Actually Works</h3>
+<p>Most budgets fail in the first month. Here is a simple system that survives contact with real life.</p>
+<div class="article-meta"><svg class="" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> 6 min read</div>
+</div>
+</a><a class="card article-card" href="../../articles/emergency-fund-how-much-is-enough/">
+<div class="article-thumb alt1"><svg class="ico" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"></path></svg></div>
+<div class="article-body">
+<span class="article-cat">Saving Money</span>
+<h3>Emergency Fund: How Much Is Actually Enough?</h3>
+<p>Three months or twelve? The right answer depends far more on your situation than on generic advice.</p>
+<div class="article-meta"><svg class="" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg> 5 min read</div>
+</div>
+</a></div>
+</div>
+</div><noscript><div class="container page"><p>MONEYWISE needs JavaScript to run its calculators. Please enable it and reload.</p></div></noscript></main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#/" class="logo">
+          <span class="logo-mark" aria-hidden="true">
+            <svg viewBox="0 0 100 100" fill="none"><path d="M22 72V28l16 20 16-20v44" stroke="#10B981" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><circle cx="76" cy="32" r="8" fill="#2563EB"/></svg>
+          </span>
+          MONEYWISE
+        </a>
+        <p>Free, accurate financial tools for everyone, everywhere. Understand your money, plan with confidence, and build a clearer future.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Popular Tools</h4>
+        <a href="#/tools/monthly-budget-calculator">Budget Calculator</a>
+        <a href="#/tools/compound-interest-calculator">Compound Interest</a>
+        <a href="#/tools/loan-calculator">Loan Calculator</a>
+        <a href="#/tools/savings-goal-calculator">Savings Goal</a>
+        <a href="#/tools/currency-converter">Currency Converter</a>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <a href="#/tools?cat=budgeting">Budgeting</a>
+        <a href="#/tools?cat=savings">Savings</a>
+        <a href="#/tools?cat=debt">Debt &amp; Loans</a>
+        <a href="#/tools?cat=income">Salary &amp; Income</a>
+        <a href="#/tools?cat=business">Business</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="#/articles">Financial Guides</a>
+        <a href="#/tools">All Tools</a>
+        <a href="#/about">About MONEYWISE</a>
+        <a href="#/contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="#/legal/privacy">Privacy Policy</a>
+        <a href="#/legal/terms">Terms of Service</a>
+        <a href="#/legal/disclaimer">Financial Disclaimer</a>
+        <a href="#/legal/cookies">Cookie Policy</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> MONEYWISE. Educational tools only — not financial advice.</span>
+      <div class="links">
+        <a href="#/legal/disclaimer">Disclaimer</a>
+        <a href="#/legal/privacy">Privacy</a>
+        <a href="#/contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast-wrap" id="toasts" aria-live="polite" aria-atomic="true"></div>
+
+<script>window.__MW_ROUTE__="/tools/sale-price-calculator";window.__MW_BASE__="../../";</script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>
