@@ -1545,7 +1545,7 @@ title:'Emergency Fund: How Much Is Actually Enough?',
 cat:'Saving Money',
 read:5,
 excerpt:'Three months or twelve? The right answer depends far more on your situation than on generic advice.',
-image: 'assets/file_0000000044a8821185f444baf8e8eeaf.png',
+image: 'assets/emergency-fund.png',
 body:[
 {h:'What the fund is for', p:'An emergency fund exists for one purpose: to stop a bad month from turning into debt. It is not an investment, it is not for holidays, and it is not for opportunities. It is insurance you pay yourself.'},
 {h:'The three-month case', p:'If you have a stable salaried job, no dependants, and skills that are in demand, three months of essential expenses is often sufficient. The probability of a long unemployment gap is low, and the opportunity cost of holding more cash is real.'},
