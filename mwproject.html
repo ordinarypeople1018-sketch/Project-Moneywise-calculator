@@ -1500,7 +1500,7 @@ const minOnly = Calc.payoff(debts, 0, v.strategy);
 
 const totalDebt = debts.reduce((s,d)=>s+d.balance,0);
 const totalMin = debts.reduce((s,d)=>s+d.minPayment,0);
-
+const RATES_API_KEY = '3c205c597fdba7e699507d65'
 return {
 kpis:[
 {label:'Debt-free in', value: chosen.months + ' months', tone:'primary', sub:`Around ${monthsToDate(chosen.months)}`},
