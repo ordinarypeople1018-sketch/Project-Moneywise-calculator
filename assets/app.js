@@ -1560,7 +1560,7 @@ title:'Snowball vs Avalanche: Which Debt Payoff Method Wins?',
 cat:'Debt Management',
 read:7,
 excerpt:'One saves more money. The other is more likely to be finished. Here is how to choose.',
-image: './assets/snow-ava.png',
+image: 'snow-ava.png',
   body:[
 {h:'The avalanche method', p:'Avalanche means paying minimums on everything, then throwing every spare unit at the debt with the highest interest rate. Mathematically it is optimal: you pay the least total interest possible given your monthly budget.'},
 {h:'The snowball method', p:'Snowball pays minimums on everything, then attacks the smallest balance. It costs more in interest, but it produces a cleared debt — a real, visible win — much sooner.'},
