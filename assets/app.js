@@ -1545,6 +1545,7 @@ title:'Emergency Fund: How Much Is Actually Enough?',
 cat:'Saving Money',
 read:5,
 excerpt:'Three months or twelve? The right answer depends far more on your situation than on generic advice.',
+image: 'assets/file_0000000044a8821185f444baf8e8eeaf.png',
 body:[
 {h:'What the fund is for', p:'An emergency fund exists for one purpose: to stop a bad month from turning into debt. It is not an investment, it is not for holidays, and it is not for opportunities. It is insurance you pay yourself.'},
 {h:'The three-month case', p:'If you have a stable salaried job, no dependants, and skills that are in demand, three months of essential expenses is often sufficient. The probability of a long unemployment gap is low, and the opportunity cost of holding more cash is real.'},
@@ -1625,17 +1626,22 @@ return `<a class="card tool-card" href="#/tools/${t.slug}">
 }
 
 function articleCard(a, i) {
-const alt = ['','alt1','alt2','alt3'][i % 4];
-return `<a class="card article-card" href="#/articles/${a.slug}">
-<div class="article-thumb ${alt}">${icon('book', 64, 'ico')}</div>
-<div class="article-body">
-<span class="article-cat">${esc(a.cat)}</span>
-<h3>${esc(a.title)}</h3>
-<p>${esc(a.excerpt)}</p>
-<div class="article-meta">${icon('clock', 13)} ${a.read} min read</div>
-</div>
-</a>`;
+  const alt = ['','alt1','alt2','alt3'][i % 4];
+  const thumbHtml = a.image 
+    ? `<img src="${window.__MW_BASE__ || ''}${a.image}" alt="${esc(a.title)}" class="card-cover-img" />`
+    : `<div class="article-thumb ${alt}">${icon('book', 64, 'ico')}</div>`;
+
+  return `<a class="card article-card" href="#/articles/${a.slug}">
+  ${thumbHtml}
+  <div class="article-body">
+  <span class="article-cat">${esc(a.cat)}</span>
+  <h3>${esc(a.title)}</h3>
+  <p>${esc(a.excerpt)}</p>
+  <div class="article-meta">${icon('clock', 13)} ${a.read} min read</div>
+  </div>
+  </a>`;
 }
+
 
 function faqBlock(faqs) {
 if (!faqs || !faqs.length) return '';
