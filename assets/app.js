@@ -1531,7 +1531,7 @@ title:'How to Build a Budget That Actually Works',
 cat:'Budgeting',
 read:6,
 excerpt:'Most budgets fail in the first month. Here is a simple system that survives contact with real life.',
-image: './assests/expenses_budget.png',
+image: './assests/expenses_budtget.png',
   body:[
 {h:'Start with what you actually spend', p:'The biggest mistake in budgeting is starting from what you think you spend. Most people underestimate discretionary spending by 20–30%. Before you set a single target, look at the last two months of bank statements and categorise every transaction. It is uncomfortable and it is the single most valuable step.'},
 {h:'Separate fixed from variable', p:'Fixed costs — rent, insurance, loan payments, subscriptions — are decided once and then happen automatically. Variable costs — food, transport, entertainment — are decided daily. These need completely different treatment. Fixed costs should be optimised once a year. Variable costs need an ongoing system.'},
